@@ -2,19 +2,14 @@
 
 import * as React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-export default function Home({ navigation }) {
+export default function Home() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Page</Text>
+      <Text>Sobre</Text>
 		  
-		  <TouchableOpacity
-			  onPress={() => navigation.navigate('Sobre')}
-					   >
-		  	<text>Sobre</text>
-		  </TouchableOpacity>
+		  	<text>Sobre a empresa</text>
+		 
     </View>
   );
 }
