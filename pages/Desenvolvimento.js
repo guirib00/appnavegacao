@@ -1,25 +1,23 @@
-// In App.js in a new project
-
 import * as React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet,Image, TouchableOpacity } from 'react-native';
 
 export default function Home() {
    return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Sobre</Text>
-      </View>	   
+        <Text style={styles.headerText}>Desenvolvimento de Sistemas</Text>
+      </View>
       <View style={styles.content}>
 		  
 		  <View style={styles.blocoImagem}>
 		  	<Image style={styles.imagem}
         			source={
-						require('./../assets/etec-itanhaem.jpg')
+						require('./../assets/ds.jpg')
 					}
       			/>
 		  </View>
 		  
-        <Text style={styles.text}>A ETEC de Itanhaém iniciou suas atividades em 01/08/2006, como Classe Descentralizada da ETEC “Adolpho Berezin” de Mongaguá, através de um convênio do Governo do Estado de São Paulo com a atual administração da Prefeitura Municipal de Itanhaém.</Text>
+        <Text style={styles.text}>O TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS é o profissional que analisa e projeta sistemas. Constrói, documenta, realiza testes e mantém sistemas de informação. Utiliza ambientes de desenvolvimento e linguagens de programação específica. Modela, implementa e mantém bancos de dados.</Text>
       </View>
       <View style={styles.footer}>
         <Image source={require('./../assets/logo.png')} style={styles.logo} />
@@ -34,13 +32,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F4F8F6',
   },
-  header: {
-    backgroundColor: '#B8E994',
-    paddingVertical: 20,
-    paddingHorizontal: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#84BF83',
-  },
 	imagem:{
 		width:180,
 		height:180,
@@ -51,6 +42,13 @@ const styles = StyleSheet.create({
 	marginLeft:80,
 	marginBottom:20
 	},
+  header: {
+    backgroundColor: '#B8E994',
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#84BF83',
+  },
   headerText: {
 	textAlign: 'center',
     fontSize: 18,
@@ -90,3 +88,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
+
